@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Ứng dụng chuyển đổi tiền tệ</title>
+</head>
+<body>
+<form>
+    <table>
+        <tr>
+            <th> Amount</th>
+            <th> From Currency</th>
+            <th> To Currency</th>
+        </tr>
+        <tr>
+            <td>
+                <input type="text" name="number" id="number">
+            </td>
+            <td>
+                <select id="VN23">
+                    <option></option>
+                    <option> VietNam</option>
+                    <option>USD</option>
+                </select>
+            </td>
+            <td>
+                <select id="DL1">
+                    <option></option>
+                    <option>VietNam</option>
+                    <option>USD</option>
+                </select>
+            </td>
+            <td>
+                <button type="button" onclick="checkid()"> Convert</button>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <h1 id="Xuat"></h1>
+            </td>
+        </tr>
+    </table>
+</form>
+<script>
+    function checkid() {
+        let num = document.getElementById("number").value;
+        let vn = document.getElementById("VN23").value;
+        let dl = document.getElementById("DL1").value;
+        const dong = 23000;
+        let tienduocdoi = 0;
+        if (vn == "VietNam" && dl == "USD") {
+            tienduocdoi = num / dong;
+        } else if (vn == "USD" && dl == "VietNam") {
+            tienduocdoi = num  * dong;
+        }
+        document.getElementById("Xuat").innerText = "Result " + tienduocdoi;
+    }
+
+
+</script>
+</body>
+</html>

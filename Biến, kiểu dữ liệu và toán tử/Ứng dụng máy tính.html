@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Ứng dụng máy tính</title>
+</head>
+<body>
+<form>
+    <table>
+        <tr>
+            <td>
+                <input type="text" name="Nhập1" id="Nhap1">
+<!--            </td>-->
+<!--            <td> -->
+                <input type="text" name="Nhập2" id="Nhap2"></td>
+            <td>
+                <button type="button" name="submit"> Submit</button>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <button type="button" id="Addition" onclick="tong()" > Addition(+)</button>
+                <button type="button" id="Subtraction" onclick="hieu()"> Subtraction(-)</button>
+                <button type="button" id="Multiplication" onclick="nhan()">Multiplication(X) </button>
+                <button type="button" id="Division" onclick="chia()" > Division(/) </button>
+            </td>
+        </tr>
+        <tr>
+            <td>
+        <h3 id="xuat"></h3>
+            </td>
+        </tr>
+
+    </table>
+</form>
+<script>
+    function tong() {
+      let check1= document.getElementById("Nhap1").value;
+      let n1 = parseInt(check1);
+      let check2 = document.getElementById("Nhap2").value;
+      let n2 = parseInt(check2);
+      let tong;
+      tong = n1 + n2;
+      document.getElementById("xuat").innerText= "Result Division: " + tong;
+    }
+    function hieu() {
+        let check1= document.getElementById("Nhap1").value;
+        let n1 = parseInt(check1);
+        let check2 = document.getElementById("Nhap2").value;
+        let n2 = parseInt(check2);
+        let hieu;
+        hieu = n1 - n2;
+        document.getElementById("xuat").innerText= "Result Division:: " + hieu;
+    }
+    function nhan() {
+        let check1= document.getElementById("Nhap1").value;
+        let n1 = parseInt(check1);
+        let check2 = document.getElementById("Nhap2").value;
+        let n2 = parseInt(check2);
+        let nhan;
+        nhan = n1 * n2;
+        document.getElementById("xuat").innerText= "Result Division:: " + nhan;
+    }
+    function chia() {
+        let check1= document.getElementById("Nhap1").value;
+        let n1 = parseInt(check1);
+        let check2 = document.getElementById("Nhap2").value;
+        let n2 = parseInt(check2);
+        let chia;
+        chia = n1 / n2;
+        document.getElementById("xuat").innerText= "Result Division:: " + chia;
+    }
+</script>
+</body>
+</html>
