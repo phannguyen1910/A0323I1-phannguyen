@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Tính cước điện thoại</title>
+</head>
+<body>
+<script>
+    // Tính cước điện thoại cho một hộ gia đình với các thông số đã cho
+    let a = +prompt("Nhập vào số phút đã gọi trong 1 tháng: ");
+    let b;
+    if (a > 100) {
+        b = a * 1300;
+        document.write("Số tiền phải trả là: " + b);
+    } else if (a > 50) {
+        b = a * 1500;
+        document.write("Số tiền phải trả là: " + b);
+    } else {
+        b = a * 2000;
+        document.write("Số tiền phải trả là: " + b);
+    }
+</script>
+</body>
+</html>
