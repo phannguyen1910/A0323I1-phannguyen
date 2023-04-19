@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Câu lệnh switch case</title>
+</head>
+<body>
+<form>
+    <table>
+        <tr>
+            <th>
+                <input type="text" id="month" name="month">
+            </th>
+            <th>
+                <button type="button" name="Tinh" id="tinh" onclick="checkId()">Tính số ngày</button>
+            </th>
+        </tr>
+        <tr>
+            <th>
+                <h3 id="check"></h3>
+            </th>
+        </tr>
+    </table>
+</form>
+<script>
+    function checkId() {
+        let month = +document.getElementById("month").value;
+        switch (month) {
+            case 1:
+                document.getElementById("check").innerText ="Tháng 1 có 31 ngày." ;
+                break;
+            case 2:
+                document.getElementById("check").innerText = "Tháng 2 có 28 hoặc 29 ngày.";
+                break;
+            case 3:
+                document.getElementById("check").innerText = "Tháng 3 có 31 ngày.";
+                break;
+            case 4:
+                document.getElementById("check").innerText="Tháng 4 có 30 ngày.";
+                break;
+            case 5:
+                document.getElementById("check").innerText="Tháng 5 có 31 ngày." ;
+                break;
+            case 6:
+                document.getElementById("check").innerText= "Tháng 6 có 30 ngày." ;
+                break;
+            case 7:
+                document.getElementById("check").innerText= "Tháng 7 có 31 ngày." ;
+                break;
+            case 8:
+                document.getElementById("check").innerText = "Tháng 8 có 31 ngày." ;
+                break;
+            case 9:
+                document.getElementById("check").innerText= "Tháng 9 có 30 ngày." ;
+                break;
+            case 10:
+                document.getElementById("check").innerText= "Tháng 10 có 31 ngày." ;
+                break;
+            case 11:
+                document.getElementById("check").innerText= "Tháng 11 có 30 ngày." ;
+                break;
+            case 12:
+                document.getElementById("check").innerText= "Tháng 12 có 31 ngày." ;
+                break;
+                default:
+                    document.getElementById("check").innerText= "Yêu cầu nhập lại";
+                    break;
+        }
+        }
+
+</script>
+</body>
+</html>

@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Tính chỉ số cân nặng cơ thể</title>
+</head>
+<body>
+<script>
+    // Chỉ số khối cơ thể (Body mass index-BMI) là một thước đo sức khoẻ dựa trên cân nặng và chiều cao. Nó được tính bằng cách lấy cân nặng đơn vị tính kilogam chia cho bình phương của chiều cao đơn vị tính mét. Công thức:
+
+        // bmi = weight / ( height ^ 2 )
+    let a = +prompt("Nhập chỉ số cân nặng: ");
+    let b = +prompt("NHập chỉ số chiều cao: ");
+    let bmi = a / (b*b);
+    if (bmi < 18.5){
+        document.write("Underweight");
+    } else if (18.5<=bmi<=25){
+        document.write("Normal");
+    } else if (25<=bmi<30){
+        document.write("Overweight");
+    } else document.write("Obese");
+</script>
+</body>
+</html>
