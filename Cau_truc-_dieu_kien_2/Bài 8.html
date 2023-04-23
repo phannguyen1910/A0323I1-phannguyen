@@ -7,11 +7,10 @@
 <body>
 <script>
     let age = +prompt("Nhập váo số tuổi của 1 người: ");
-    if (0 < age < 120) {
+    if ( age > 0 && age< 120) {
         document.write(age + ": là tuổi của một người");
-    } else {
-        document.write(age + ": không phải là tuổi của một người");
-    }
+    } else document.write(age + ": không phải là tuổi của một người");
+
 
 </script>
 </body>

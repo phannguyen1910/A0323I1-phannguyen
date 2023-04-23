@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Tính tiền điện</title>
+</head>
+<body>
+<script>
+    let a = +prompt("Số điện áp được cấp: ");
+    let gioBinhThuong;
+    if (a > 110) {
+        gioBinhThuong = a * 1536;
+        document.write("Giá điện giờ bình thường là: " + gioBinhThuong);
+    } else if (a > 22 && a < 110) {
+        gioBinhThuong = a * 1555;
+        document.write("Giá điện giờ bình thường là: " + gioBinhThuong);
+    } else if (a > 6 && a < 22) {
+        gioBinhThuong = a * 1611;
+        document.write("Giá điện giờ bình thường là: " + gioBinhThuong);
+    } else {
+        gioBinhThuong = a * 1685;
+        document.write("Giá điện giờ bình thường là: " + gioBinhThuong);
+    }
+
+</script>
+</body>
+</html>
