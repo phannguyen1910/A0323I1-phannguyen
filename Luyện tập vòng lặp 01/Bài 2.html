@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bài 2</title>
+</head>
+<body>
+<script>
+    let n;
+    do {
+        n = +prompt("Nhập vào nhiệt độ: ");
+        if (n > 100) {
+            alert("Nhập lại nhiệu độ thấp hơn")
+        } else if (n < 20) {
+            alert("Nhập vào nhiệt độ cao hơn.");
+        }
+    } while (n > 100 || n < 20)
+    alert("Nhiệt độ đạt yêu cầu : " + n);
+</script>
+</body>
+</html>
