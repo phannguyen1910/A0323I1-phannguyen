@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bài 2</title>
+</head>
+<body>
+<script>
+    let numbers = [20, 40, 56, 87, 94, 56, 78, 99, 63, 7];
+    let max = numbers[0];
+    for (let i = 0; i < numbers.length; i++) {
+        if (numbers[i] > max) {
+            max = numbers[i];
+
+        }
+    }
+    document.write("Số lớn nhất của mảng là: " + max + "<br>");
+    document.write("Vị trí của số đó trong mảng là: " + numbers.indexOf(max));
+
+</script>
+</body>
+</html>

@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let nhap = +prompt("Nhập vào một số: ");
+    let str = nhap.toString();
+    let chuoi = [str[0]];
+    for (let i =1; i< str.length;i++){
+        if (str[i] % 2 === 0){
+            chuoi.push(' - ', str[i]);
+        } else chuoi.push(str[i]);
+    } document.write(chuoi.join(''));
+</script>
+</body>
+</html>

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Từ Điển</title>
+</head>
+<table>
+    <tr>
+        <td>
+            <input type="text" name="dich" id="dich">
+        </td>
+        <td>
+            <input type="submit" name="dich" onclick="tuDien()" value="Dich">
+        </td>
+    </tr>
+    <tr>
+        <td>  <p id="xuat" style="color: black"></p>    </td>
+
+    </tr>
+</table>
+<body>
+<script>
+    let tiengViet = ["màu trắng", "màu vàng", "màu đen", "màu đỏ"];
+    let tiengAnh = ["white", "yellow", "black", "red"];
+    let flag = false;
+
+    function tuDien() {
+        for (let i = 0; i < tiengViet.length; i++) {
+            if (tiengViet[i] === dich.value) {
+                flag = true;
+                document.getElementById("xuat").innerHTML = tiengAnh[i];
+                break;
+            }
+        }
+        if (!flag) {
+            document.getElementById("xuat").innertext = "Không có trong từ điển";
+        }
+    }
+</script>
+</body>
+</html>

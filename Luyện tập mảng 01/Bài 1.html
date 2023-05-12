@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bài 1</title>
+</head>
+<body>
+<script>
+    let num = [10, 51, 9, 48, 23, 54, 5];
+    let tong = 0;
+    for (let i = 0; i < num.length; i++) {
+        if (num[i] >= 10) {
+            document.write(" số lớn hơn hoặc bằng 10 là: " + num[i] + "<br>");
+            tong++;
+        } else document.write("số nhỏ hơn 10 là:" + num[i] + "<br>");
+    }
+    document.write("Tồng các số lớn hơn 10 là: " + tong);
+
+</script>
+</body>
+</html>
