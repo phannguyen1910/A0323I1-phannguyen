@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bài 5</title>
+</head>
+<body>
+<script>
+    let arr1 = ["Polaris", "Aldebaran", "Deneb", "Vega", "Altair", "Dubhe", "Regulus"];
+    let arr2 = ["Ursa Minor", "Tarurus", "Cygnus", "Lyra", "Aquila", "Ursa Major", "Leo"];
+    let nhap = prompt("Nhập vào tên ngôi sao tra: ")
+    let flag = false;
+
+    function reseach(check) {
+        for (let i = 0; i < arr1.length; i++) {
+            if (check === arr1[i]) {
+                check = arr2[i];
+                flag = true;
+                document.write("Tên chòm sao của ngôi sao đó là: " + check);
+                break;
+            } else {
+                flag = false;
+            }
+        }
+        if (!flag) {
+            alert("Ngôi sao bạn tra không có trong từ điển");
+        }
+    }
+
+    reseach(nhap);
+</script>
+</body>
+</html>

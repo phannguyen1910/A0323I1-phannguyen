@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bài 3</title>
+</head>
+<body>
+<script>
+    let a = 0;
+
+    function giaiThua(n) {
+        if (n === 0) {
+            return 1
+        }
+        return n * giaiThua(n - 1);
+    }
+
+    document.write(giaiThua(5));
+</script>
+</body>
+</html>

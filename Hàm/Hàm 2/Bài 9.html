@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bài 9</title>
+</head>
+<body>
+<script>
+    let num = [];
+    let b = +prompt("Nhập vào độ dài của mảng: ");
+    let a = +prompt("Nhập vào số bạn muốn đoán: ");
+    let count = 0;
+    let flag = false;
+
+    function check() {
+        for (let i = 0; i < b; i++) {
+            num[i] = +prompt("Nhập vào các phần tử của mảng: ");
+            if (num[i] === a) {
+                count++;
+                flag = true;
+            }
+        }
+        if (!flag) {
+            document.write("-1" + "<br>");
+        }
+        document.write("Tổng các số giống nhau là: " + count);
+    }
+
+    check();
+</script>
+</body>
+</html>
