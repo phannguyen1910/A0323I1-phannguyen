@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Tính lương nhân viên</title>
+</head>
+<body>
+<script>
+    let nhap = +prompt("Nhập vào lương của nhân viên: ");
+    let thue;
+    let luongRong;
+    if (nhap > 15000000) {
+        thue = nhap * 20 / 100;
+        luongRong = nhap - thue;
+    } else if (nhap > 7000000 && nhap < 15000000) {
+        thue = nhap * 10 / 100;
+        luongRong = nhap - thue;
+    } else thue = nhap * 5 / 100;
+    luongRong = nhap - thue;
+    document.write("Số tiền thuế của người đó là: " + thue + "<br>");
+    document.write("Số tiền nhận được sau thế là: " + luongRong);
+</script>
+</body>
+</html>
