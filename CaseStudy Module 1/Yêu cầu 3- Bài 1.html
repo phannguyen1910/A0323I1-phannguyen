@@ -5,19 +5,19 @@
     <title>Title</title>
 </head>
 <body>
-<SCRIPT>
-    let n = +prompt("Nhập vào chiều dài của mảng a: ");
+<script>
+    let c = +prompt(" Nhập kích thước của mảng:");
     let a = [];
     let b = [];
-    for (let i = 0; i < n; i++) {
-        a = +prompt("Nhập vào các phần tử của a:");
-        b[0] = a[0];
-       b[1]  = a[0] + a[1];
-       b[2]  = a[1]+ a[2];
+    let sum = 0;
+    for (let i = 0; i<c ; i++){
+        a[i] = +prompt("Nhập vào chuỗi a:");
+    } document.write(a.join(',') + "<br>");
+    for (let i =0; i<c; i++){
+        sum = sum + a[i];
+        b[i] = sum;
+    } document.write(b.join(','));
 
-    }
-    document.write(a);
-    document.write(b);
-</SCRIPT>
+</script>
 </body>
 </html>

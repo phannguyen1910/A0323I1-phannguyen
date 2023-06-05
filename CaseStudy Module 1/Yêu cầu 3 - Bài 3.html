@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title> Bài 3 </title>
+</head>
+<body>
+<script>
+    let n = +prompt("Nhập vào chiều dài của mảng a:")
+    let b = +prompt("Nhập vào chiều dài của mảng b:")
+    let  numerators = [];
+    let denominators = [];
+    for (let i = 0; i < n ; i++) {
+        numerators[i] = +prompt("Nhập vào các phần tử của mảng a:");
+    }
+    for (let i = 0; i < b ; i++) {
+        denominators[i] = +prompt("Nhập vào các phần tử của mảng b:");
+    }
+    let maxFraction = (numerators[0] / denominators[0]);
+    let index;
+    for (let i = 0; i < numerators.length; i++) {
+        if (maxFraction < (numerators[i] / denominators[i])) {
+            maxFraction = (numerators[i] / denominators[i]);
+            index = i;
+        }
+    }
+    document.write("Giá trị số thập phân lớn nhất là:" + maxFraction + "<br>");
+    document.write(" Vị trí của số thập phân lớn nhất là: " + index);
+</script>
+</body>
+</html>

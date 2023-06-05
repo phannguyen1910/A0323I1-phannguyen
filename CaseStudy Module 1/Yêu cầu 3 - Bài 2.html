@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let aLengArr = +prompt("Input Length array A:")
+    let bLengArr = +prompt("Input Length array B:")
+    let a = [];
+    let b = [];
+    let c = [];
+    for (let j = 0; j < aLengArr; j++) {
+        a[j] = +prompt("Nhập các số trong mảng a:");
+    }
+    for (i = 0; i < bLengArr; i++) {
+        b[i] = +prompt("Nhập các số trong mảng b:");
+    }
+    document.write(a + "<br>");
+    document.write(b+ "<br>");
+    for (let i = 0; i < bLengArr; i++) {
+        if (a.indexOf(b[i]) === -1 && c.indexOf(b[i]) === -1) {
+            c.push(b[i]);
+        }
+    }
+    document.write("Missing Value:" + c);
+
+
+</script>
+</body>
+</html>
