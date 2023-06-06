@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bài 3</title>
+</head>
+<body>
+<script>
+    let a = [[1,2,5],[8,9,7],[5,4,6]];
+    let max = a[0][0];
+    let min = a[0][0];
+    for (let i = 0; i < a.length ; i++) {
+        for (let j = 0; j < a.length ; j++) {
+            if (max < a[i][j]){
+                max = a[i][j];
+            }
+        }
+    }
+    document.write("Giá trị lớn nhất ở trong mảng là: " + max+ "<br>");
+    for (let i = 0; i < a.length ; i++) {
+        for (let j = 0; j < a.length ; j++) {
+            if (min > a[i][j]){
+                min = a[i][j];
+            }
+        }
+    }
+    document.write("Giá trị nhỏ nhất ở trong mảng là: " + min + "<br>");
+
+</script>
+</body>
+</html>

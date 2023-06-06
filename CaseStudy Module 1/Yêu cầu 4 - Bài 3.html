@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Tìm số lượng kí tự chung</title>
+</head>
+<body>
+<script>
+    let str1 = 'aabcc';
+    let str2 = 'adcaa';
+    let c ;
+    let d ;
+
+    c = str1.split("");
+    d = str2.split("");
+    let sum = 0;
+    for (let i =0; i< c.length;i++){
+        for (let j = 0 ; j< d.length; j++){
+            if (c[i] === d[j]){
+                d[j]="";
+                sum ++;
+                break;
+
+            }
+        }
+    }
+    document.write("Số lượng kí tự chung là: " + sum);
+</script>
+</body>
+</html>

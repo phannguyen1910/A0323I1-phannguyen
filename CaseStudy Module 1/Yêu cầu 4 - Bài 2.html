@@ -6,7 +6,16 @@
 </head>
 <body>
 <script>
-
+    let n = +prompt("Nhập vào chiều dài của mảng: ");
+    let a = [];
+    let count = 0;
+    for (let i = 0; i < n; i++) {
+        a[i] = prompt("Nhập vào các phần tử của mảng: ");
+        if (a[0] != a[i]) {
+            count++;
+        }
+    }
+    document.write(count);
 </script>
 </body>
 </html>
